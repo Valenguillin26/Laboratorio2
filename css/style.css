@@ -1,0 +1,32 @@
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/*<----inicio----->*/
+
+.header {
+width:100%;
+background-color:black;
+}
+.container{
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+}
+.container .navegacion > a{
+color:white;
+text-decoration:none;
+justify-content: space-between;
+padding-left:2em;
+font-family: 'Roboto';
+
+}
+.navetacion a:hover{
+    color:rgba(107, 154, 226, 0.685)
+
+}
+    /*<cierre de mi header--->*/
