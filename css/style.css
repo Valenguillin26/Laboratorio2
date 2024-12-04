@@ -1,32 +1,134 @@
 *{
-
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 /*<----inicio----->*/
 
-.header {
-width:100%;
-background-color:black;
+.header{
+    width:100%;
+    background-color:rgb(28, 73, 124);
 }
 .container{
     width:90%;
     margin:0 auto;
     display:flex;
     align-items:center;
+    justify-content: space-between;
 }
 .container .navegacion > a{
-color:white;
-text-decoration:none;
-justify-content: space-between;
-padding-left:2em;
-font-family: 'Roboto';
+    color:white;
+    text-decoration:none;
+    justify-content: space-between;
+    padding-left:2em;
+    font-family: 'Roboto';
 
 }
+
+
+
 .navetacion a:hover{
     color:rgba(107, 154, 226, 0.685)
 
 }
     /*<cierre de mi header--->*/
+
+    /*<---hero---->*/
+    .hero{
+        background-image: url(../img/hero1.jpg);
+        background-repeat:no-repeat;
+        background-size:cover;
+        height:60vh;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        position: relative;
+    }
+    .padre{
+        position:relative
+    }
+
+    .presentation{
+        color:rgb(241, 226, 226);
+        padding-top:30em;
+    }
+
+     .presentation > h1{
+        font-family: 'Roboto';
+            font-size: 50px;
+            color: white;
+                margin-bottom: 1em;  
+                padding-top: 2em;       
+
+    }
+    .presentation  > p {
+        font-size: 100px;
+                color:white;
+                font-weight: 300;
+                padding-top: 5em;
+                font-family: 'Roboto';
+
+    }
+    .btn{
+        margin-top: 20px;
+        background-color: rgb(138, 43, 226);
+        color: white;
+        padding: 10px 20px; 
+        border-radius: 10%;
+        text-decoration: none; 
+        font-size: 16px;
+        display: inline-block;
+
+    }
+    .btn:hover {
+    background-color: rgb(108, 33, 176); 
+    }
+
+    .technologies {
+        background-color: #f4f4f4;
+        padding: 50px 20px;
+        text-align: center;
+    }
+    
+    .technologies h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 32px;
+        color: #333;
+        margin-bottom: 30px;
+    }
+    
+    .tech-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .tech-item {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        width: 150px;
+        text-align: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .tech-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .tech-item img {
+        width: 60px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .tech-item p {
+        font-size: 18px;
+        color: #555;
+        margin: 0;
+    }
